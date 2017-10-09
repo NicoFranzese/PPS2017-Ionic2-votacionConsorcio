@@ -1,0 +1,34 @@
+<!--
+  Generated template for the TipoVotacionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>tipoVotacion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <ion-view view-title="Login" name="login-view"> -->
+    <ion-content class="padding">
+        <div class="list list-inset">
+        <ion-item>
+          <ion-label class = "item item-input item-select item-positive">Selección Votación</ion-label>   
+            <ion-select [(ngModel)]="tipo" id="tipo" name="tipo">
+                <ion-option selected>Seleccione Votación</ion-option>
+                <ion-option>Plantas</ion-option>
+                <ion-option>Matafuegos</ion-option>
+            </ion-select>
+          </ion-item>
+        <button ion-button 
+        (click)="SeleccionTipoVotacion(tipo)">Aceptar</button>
+        <!-- <button class="button button-block button-calm" (click)="Login(usuario, password, tipo)">Login</button> -->
+    </div>
+    </ion-content>
+ <!-- </ion-view>  -->
+</ion-content>
