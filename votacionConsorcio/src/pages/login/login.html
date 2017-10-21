@@ -6,17 +6,16 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding style="background-color:blueviolet">
   <!-- <ion-view view-title="Login" name="login-view"> -->
-    <ion-content class="padding">
-        <div class="list list-inset">
+        <div class="list list-inset" style="background-color:blueviolet">
           <ion-item>
             <ion-label>Usuario</ion-label>
-            <ion-input [(ngModel)]="usuario" id="usuario" name="usuario"></ion-input>
+            <ion-input disabled [(ngModel)]="usuario" id="usuario" name="usuario"></ion-input>
           </ion-item>
           <ion-item>
             <ion-label class="item item-input">Clave</ion-label>
-            <ion-input [(ngModel)]="password" id="password" name="password" type="password"></ion-input>
+            <ion-input disabled [(ngModel)]="password" id="password" name="password" type="password"></ion-input>
           </ion-item>
         <ion-item>
           <ion-label class = "item item-input item-select item-positive">Tipo</ion-label>   
@@ -33,6 +32,5 @@
         (click)="Login(usuario, password, tipo)">Login</button>
         <!-- <button class="button button-block button-calm" (click)="Login(usuario, password, tipo)">Login</button> -->
     </div>
-    </ion-content>
  <!-- </ion-view>  -->
 </ion-content>

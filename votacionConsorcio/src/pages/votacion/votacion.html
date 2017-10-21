@@ -13,10 +13,9 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background-color:blueviolet">
   <!-- <ion-view view-title="Login" name="login-view"> -->
-    <ion-content class="padding">
-        <div class="list list-inset">
+        <div class="list list-inset" style="background-color:blueviolet">
         <ion-item>
           <ion-label class = "item item-input item-select item-positive">Desea poner {{tipo}}?</ion-label>   
             <ion-select [(ngModel)]="votacion" id="votacion" name="votacion">
@@ -29,6 +28,5 @@
         (click)="Votar(votacion)">Aceptar</button>
         <!-- <button class="button button-block button-calm" (click)="Login(usuario, password, tipo)">Login</button> -->
     </div>
-    </ion-content>
  <!-- </ion-view>  -->
 </ion-content>

@@ -57,6 +57,7 @@ export class ResultadosPage {
   }
 
   private Desloguear() {
+    localStorage.clear();
     this.navCtrl.push(LoginPage);
   }
 

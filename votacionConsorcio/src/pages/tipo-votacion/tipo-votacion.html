@@ -13,22 +13,12 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background-color:blueviolet">
   <!-- <ion-view view-title="Login" name="login-view"> -->
-    <ion-content class="padding">
-        <div class="list list-inset">
-        <ion-item>
-          <ion-label class = "item item-input item-select item-positive">Selección Votación</ion-label>   
-            <ion-select [(ngModel)]="tipo" id="tipo" name="tipo">
-                <ion-option selected>Seleccione Votación</ion-option>
-                <ion-option>Plantas</ion-option>
-                <ion-option>Matafuegos</ion-option>
-            </ion-select>
-          </ion-item>
-        <button ion-button 
-        (click)="SeleccionTipoVotacion(tipo)">Aceptar</button>
-        <!-- <button class="button button-block button-calm" (click)="Login(usuario, password, tipo)">Login</button> -->
-    </div>
-    </ion-content>
- <!-- </ion-view>  -->
+  <div class="list list-inset">
+    <button ion-button block color="danger" (click)="SeleccionTipoVotacion('Plantas')">PPS-4A</button>
+    <button ion-button block color="danger" (click)="SeleccionTipoVotacion('Matafuegos')">PPS-4B</button>
+    <!-- <button class="button button-block button-calm" (click)="Login(usuario, password, tipo)">Login</button> -->
+  </div>
+  <!-- </ion-view>  -->
 </ion-content>
